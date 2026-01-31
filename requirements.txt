@@ -1,7 +1,38 @@
-streamlit
-pandas
-spacy
-python-docx
-pdfminer.six
-scikit-learn
-nltk
+# ================================
+# Core Application Framework
+# ================================
+streamlit==1.32.2
+
+
+# ================================
+# Data Processing & Utilities
+# ================================
+numpy==1.26.4
+pandas==2.2.1
+tqdm==4.66.2
+
+
+# ================================
+# NLP & Machine Learning Engine
+# ================================
+scikit-learn==1.4.1.post1
+regex==2024.2.25
+
+
+# ================================
+# Resume Parsing (PDF / DOCX)
+# ================================
+pdfminer.six==20231228
+python-docx==1.1.0
+
+
+# ================================
+# Data Visualization & Analytics
+# ================================
+plotly==5.19.0
+
+
+# ================================
+# Performance & Compatibility
+# ================================
+typing-extensions>=4.9.0
