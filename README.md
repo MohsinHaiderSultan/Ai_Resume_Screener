@@ -167,15 +167,5 @@ This system is designed following **Human-Computer Interaction (HCI)** best prac
 **Mohsin Haider Sultan**  
 *Lead Systems Architect & AI Specialist*
 
-🎓 Computer Science Graduate  
-🧠 AI • 🛡️ Cybersecurity • 🌐 Full-Stack Development  
-🚀 Passionate about building intelligent, human-centric software solutions
-
 ---
-
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-See the `LICENSE` file for more details.
-
 
