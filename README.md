@@ -105,8 +105,8 @@ ai_resume_screener/
 ## ⚙️ Installation & Setup
 - 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/talentpulse-ai.git
-cd talentpulse-ai
+git clone https://github.com/MohsinHaiderSultan/Ai_Resume_Screener.git
+cd Ai_Resume_Screener
 ```
 
 - 2️⃣ Install Dependencies
