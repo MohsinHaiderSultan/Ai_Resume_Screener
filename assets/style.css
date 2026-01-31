@@ -1,0 +1,210 @@
+/* --- Global Reset & Typography --- */
+@import url('https://www.google.com/search?q=https://fonts.googleapis.com/css2%3Ffamily%3DPlus%2BJakarta%2BSans:wght%40300%3B400%3B500%3B600%3B700%3B800%26display%3Dswap');
+
+/* Define Theme Variables */
+:root {
+    --bg-color: #f8fafc;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #64748b;
+    --card-bg: rgba(255, 255, 255, 0.8);
+    --card-border: rgba(226, 232, 240, 0.8);
+    --metric-bg: #ffffff;
+    --sidebar-bg: #ffffff;
+    --input-bg: #ffffff;
+    --input-border: #cbd5e1;
+    --accent-primary: #1d4ed8;
+    --accent-hover: #1e40af;
+    --tab-inactive: #ffffff;
+
+    /* Status Colors */
+    --success-bg: rgba(16, 185, 129, 0.1);
+    --success-text: #166534;
+    --success-border: #bbf7d0;
+    --danger-bg: rgba(239, 68, 68, 0.1);
+    --danger-text: #b91c1c;
+    --danger-border: #fecaca;
+
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #0f172a;
+        --text-primary: #f8fafc;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+        --card-bg: rgba(30, 41, 59, 0.7);
+        --card-border: rgba(51, 65, 85, 0.5);
+        --metric-bg: #1e293b;
+        --sidebar-bg: #1e293b;
+        --input-bg: #0f172a;
+        --input-border: #334155;
+        --accent-primary: #38bdf8;
+        --accent-hover: #7dd3fc;
+        --tab-inactive: #1e293b;
+
+        /* Status Colors Dark */
+        --success-bg: rgba(52, 211, 153, 0.15);
+        --success-text: #34d399;
+        --success-border: rgba(52, 211, 153, 0.3);
+        --danger-bg: rgba(248, 113, 113, 0.15);
+        --danger-text: #f87171;
+        --danger-border: rgba(248, 113, 113, 0.3);
+    }
+
+
+}
+
+html,
+body,
+[class*="css"] {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--text-primary);
+}
+
+/* --- Background and Container Styling --- */
+.stApp {
+    background-color: var(--bg-color);
+}
+
+/* --- Executive Talent Card Styling --- */
+.talent-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    transition: all 0.2s ease;
+    color: var(--text-primary);
+}
+
+.talent-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-2px);
+}
+
+/* --- Badge / Pill Styling --- */
+.pill {
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+    display: inline-block;
+}
+
+.pill-success {
+    background: var(--success-bg);
+    color: var(--success-text);
+    border-color: var(--success-border);
+}
+
+.pill-danger {
+    background: var(--danger-bg);
+    color: var(--danger-text);
+    border-color: var(--danger-border);
+}
+
+/* --- Custom Metric Styling --- */
+div[data-testid="stMetric"] {
+    background: var(--metric-bg);
+    border: 1px solid var(--card-border);
+    padding: 15px 20px;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: var(--text-muted) !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 0.75rem !important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: var(--text-primary) !important;
+    font-weight: 800 !important;
+}
+
+/* --- Sidebar Refinement --- */
+section[data-testid="stSidebar"] {
+    background-color: var(--sidebar-bg);
+    border-right: 1px solid var(--card-border);
+}
+
+section[data-testid="stSidebar"] .stButton button {
+    border-radius: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0.6rem 1rem;
+}
+
+/* --- Tabs Styling --- */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+    background-color: transparent;
+}
+
+.stTabs [data-baseweb="tab"] {
+    height: 45px;
+    white-space: pre-wrap;
+    background-color: var(--tab-inactive);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    border: 1px solid var(--card-border);
+    padding: 10px 20px;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--accent-primary) !important;
+    color: white !important;
+    border-color: var(--accent-primary) !important;
+}
+
+/* --- Input Fields --- */
+.stTextInput input,
+.stTextArea textarea {
+    background-color: var(--input-bg) !important;
+    color: var(--text-primary) !important;
+    border-radius: 12px !important;
+    border: 1px solid var(--input-border) !important;
+}
+
+.stTextInput input:focus,
+.stTextArea textarea:focus {
+    border-color: var(--accent-primary) !important;
+    box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.1) !important;
+}
+
+/* --- File Uploader --- */
+section[data-testid="stFileUploadDropzone"] {
+    border: 2px dashed var(--input-border);
+    border-radius: 16px;
+    background: var(--bg-color);
+}
+
+/* --- Progress Bar --- */
+div[data-testid="stProgress"]>div>div>div>div {
+    background-color: var(--accent-primary);
+}
+
+/* --- Button Primary --- */
+div.stButton>button:first-child {
+    background-color: var(--accent-primary);
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+div.stButton>button:hover {
+    background-color: var(--accent-hover);
+    color: white;
+    box-shadow: 0 4px 12px rgba(29, 78, 216, 0.2);
+}
