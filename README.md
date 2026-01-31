@@ -20,7 +20,7 @@
 
 ## 📸 Screenshots
 
-| Dashboard | live Monitor | Anomaly Report | Threat Intel |
+| Dashboard | Candidate Comparsion | Pool Analytics | Final Selection |
 |------------|-----------|----------------|----------------|
 | <img src="assets/Screenshot (36).png" alt="Login Page" width="300"/> | <img src="assets/Screenshot (37).png" alt="Dashboard" width="300"/> | <img src="assets/Screenshot (38).png" alt="Anomaly Report" width="300"/> |<img src="assets/Screenshot (39).png" alt="Threat Intel" width="300"/> |
 
